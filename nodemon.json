@@ -1,0 +1,6 @@
+{
+ "events": {
+     "restart": "cp src/public/index.html dist/public/index.html && cp src/public/style.css dist/public/style.css",
+     "start": "cp src/public/index.html dist/public/index.html && cp src/public/style.css dist/public/style.css"
+   }
+}

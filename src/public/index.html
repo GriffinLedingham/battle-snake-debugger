@@ -1,0 +1,27 @@
+<script src="http://d3js.org/d3.v3.min.js"></script>
+<script src="./script/app.js"></script>
+<script src="./script/tree.js"></script>
+<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+
+<html lang="en">
+  <head>
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <meta charset="utf-8">
+    <title>Snake Debugger</title>
+  </head>
+
+  <body>
+    <div id="info">
+      <div id="board"></div>
+    </div>
+    <div id="tree"></div>
+    <script>
+    const tree = new Tree(d3)
+    const app = new App(tree.drawTree)
+    app.getData()
+    </script>
+  </body>
+</html>
